@@ -1,4 +1,5 @@
-import { Github, Instagram, Linkedin, Mail, Code2, Database, Layout, Server, Cpu } from 'lucide-react';
+import { Github, Instagram, Linkedin, Code2, Database, Layout, Server } from 'lucide-react';
+import profileImg from '../assets/profile.jpg';
 
 export default function About() {
   return (
@@ -32,7 +33,7 @@ export default function About() {
                         <div className="w-full h-full rounded-full bg-pl-primary overflow-hidden border-4 border-[#240026]">
                             {/* Ganti src dengan foto profil kamu */}
                             <img 
-                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=400&h=400" 
+                                src={profileImg} 
                                 alt="Creator" 
                                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                             />
@@ -40,17 +41,14 @@ export default function About() {
                     </div>
                  </div>
 
-                 <h2 className="text-3xl font-black text-white uppercase tracking-tight mb-2">Jibran</h2>
-                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8">
-                    <Cpu size={14} className="text-pl-cyan"/>
-                    <span className="text-[10px] font-black text-pl-cyan uppercase tracking-widest">Fullstack Developer</span>
-                 </div>
+                 <h2 className="text-2xl font-black text-white uppercase tracking-tight mb-8 text-center leading-tight">
+                    Togar Anthony<br/>Mario Sianturi
+                 </h2>
                  
                  <div className="flex gap-4 mt-auto">
-                    <SocialButton icon={<Github size={20}/>} href="https://github.com/jibrananlt" />
-                    <SocialButton icon={<Linkedin size={20}/>} href="#" />
-                    <SocialButton icon={<Instagram size={20}/>} href="#" />
-                    <SocialButton icon={<Mail size={20}/>} href="#" />
+                    <SocialButton icon={<Github size={20}/>} href="https://github.com/mariosianturi19" />
+                    <SocialButton icon={<Linkedin size={20}/>} href="https://www.linkedin.com/in/togar-anthony-mario-sianturi/" />
+                    <SocialButton icon={<Instagram size={20}/>} href="https://www.instagram.com/mariosianturii/" />
                  </div>
               </div>
 
@@ -58,13 +56,10 @@ export default function About() {
               <div className="col-span-2 p-8 md:p-12 flex flex-col justify-center bg-gradient-to-br from-[#2c0030] to-[#240026]">
                  <div className="mb-10">
                     <h3 className="text-xl font-black text-white uppercase tracking-wide mb-4 flex items-center gap-3">
-                        <span className="w-2 h-8 bg-pl-pink rounded-full"></span> Biography
+                        <span className="w-2 h-8 bg-pl-pink rounded-full"></span> About Project
                     </h3>
                     <p className="text-pl-gray leading-relaxed text-base md:text-lg font-medium">
-                        Hello! I'm a passionate software engineer dedicated to building modern, high-performance web applications. 
-                        This project, <span className="text-white font-bold">Premier League API</span>, showcases my ability to craft pixel-perfect interfaces using 
-                        <span className="text-pl-cyan font-bold"> React</span> & <span className="text-pl-cyan font-bold">Tailwind CSS</span>, 
-                        powered by a robust backend infrastructure. I believe in writing clean code and delivering exceptional user experiences.
+                        This application serves as a comprehensive digital hub for the Premier League, designed to provide fans with real-time access to club information, match schedules, and league standings. Built with a focus on performance and user experience, it leverages modern web technologies to deliver accurate data in an interactive and visually engaging interface.
                     </p>
                  </div>
 
@@ -87,7 +82,7 @@ export default function About() {
         {/* Footer Credit */}
         <div className="text-center mt-16 pb-8 border-t border-white/5 pt-8">
            <p className="text-pl-gray font-bold text-xs uppercase tracking-[0.2em] opacity-50 hover:opacity-100 transition-opacity">
-             Designed & Developed by Jibran © 2025
+             Designed & Developed by Togar Anthony Mario Sianturi © 2025
            </p>
         </div>
 
