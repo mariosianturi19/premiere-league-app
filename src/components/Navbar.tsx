@@ -55,8 +55,8 @@ export default function Navbar() {
               className="w-10 h-10 md:w-14 md:h-14 object-contain group-hover:rotate-12 transition-transform duration-500" 
             />
             <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-black tracking-tighter text-white leading-none group-hover:text-pl-cyan transition-colors">LEAGUE<span className="text-pl-cyan">APP</span></span>
-              <span className="text-[8px] md:text-[10px] font-bold tracking-[0.2em] text-pl-gray uppercase text-center md:text-left">Official Hub</span>
+              <span className="text-lg md:text-xl font-black tracking-tighter text-white leading-none group-hover:text-pl-cyan transition-colors">PREMIER<span className="text-pl-cyan">LEAGUE</span></span>
+              <span className="text-[8px] md:text-[10px] font-bold tracking-[0.2em] text-pl-gray uppercase text-center md:text-left">Information</span>
             </div>
           </Link>
 
