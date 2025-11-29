@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pl-dark text-white font-sans antialiased selection:bg-pl-pink selection:text-white;
+  }
+}
+
+@layer utilities {
+  /* Support untuk area aman iPhone (garis hitam bawah) */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Custom Scrollbar Dark Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1f0022;
+}
+::-webkit-scrollbar-thumb {
+  background: #38003c;
+  border-radius: 4px;
+  border: 1px solid #500056;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff85;
+}
