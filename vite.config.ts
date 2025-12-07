@@ -7,21 +7,31 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'League App Official',
-        short_name: 'LeagueApp',
-        description: 'Official Premiere League Database & Schedule',
-        theme_color: '#ffffff',
+        name: 'Premier League Information',
+        short_name: 'PL Info',
+        description: 'Official Premier League Database & Schedule Information',
+        theme_color: '#2c0030',
+        background_color: '#2c0030',
+        display: 'standalone',
+        orientation: 'portrait',
         icons: [
           {
-            src: 'pwa-192x192.png', // Kamu harus siapkan icon ini di folder public
+            src: 'pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png', // Kamu harus siapkan icon ini di folder public
+            src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png'
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable'
           }
         ]
       }

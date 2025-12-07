@@ -126,7 +126,12 @@ export default function Matches() {
     }
 
     try {
-        await apiClient.post('/matches', schedule);
+        // Convert local time to UTC ISO string before sending
+        const payload = {
+            ...schedule,
+            date: new Date(schedule.date).toISOString()
+        };
+        await apiClient.post('/matches', payload);
         setSchedule({ homeTeamId: '', awayTeamId: '', date: '' });
         fetchData();
         setIsScheduleModalOpen(false); 
